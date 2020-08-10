@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture In Picture</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png?v=2" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/1869f8b461.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Video -->
+      <div id="video-wrapper">
+        <span> PIP MODE</span>
+        <video id="video" controls></video>
+      </div>
+
+      <!-- Button -->
+      <div id="button-wrapper">
+        <div id="pip-module">
+          <div class="label-text">PIP Mode</div>
+          <label id="pip-toggle-btn">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div id="select-btn">
+          <span class="text">Select Video</span>
+          <div class="plus-icon"><i class="fas fa-plus"></i></div>
+        </div>
+        <div id="close-btn">
+          <span class="text">Close Video</span>
+          <div class="close-icon"><i class="fas fa-times"></i></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
