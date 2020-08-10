@@ -34,7 +34,7 @@ referenced ideas and codes from the ZMT JS course
 
 I would use in this ways...
 -  turn on PIP mode of tutorial video and search and code together! 
-- when listen music with beatiful landscape video
+- when listen music with beautiful landscape video
 - etc ...!  
 
 
