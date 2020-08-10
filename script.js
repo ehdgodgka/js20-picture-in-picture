@@ -48,9 +48,13 @@ const hideVideoAndControl = () => {
   videoCloseBtn.style.display = 'none';
 };
 
-const togglePip = () => {
-  !pipToggleButton.checked;
-  videoElement.hidden = !videoElement.hidden;
+const turnOnPip = () => {
+  pipToggleButton.checked = true;
+  videoElement.hidden = true;
+};
+const turnOffPip = () => {
+  pipToggleButton.checked = false;
+  videoElement.hidden = false;
 };
 
 pipToggleButton.addEventListener('change', async (event) => {
@@ -83,10 +87,10 @@ videoCloseBtn.addEventListener('click', async () => {
 
 videoElement.addEventListener('enterpictureinpicture', function (event) {
   console.log('> Video entered Picture-in-Picture');
-  togglePip();
+  turnOnPip();
 });
 
 videoElement.addEventListener('leavepictureinpicture', function (event) {
   console.log('> Video left Picture-in-Picture');
-  togglePip();
+  turnOffPip();
 });
